@@ -7,3 +7,5 @@ Command used for execution: zless q1_data.tsv.gz | awk 'NR==1||/ENSG/' | python 
 __Question 2]__ We have data file q2_data.tsv and have to generate line plot based on catogories. Using ggplot library plot generted using R scripting. Command line argument used to lable x axis, y axis, name graph title & output file. Command used for execution: cat q2_data.tsv | Rscript lineplot.R "different_clusters.png" "Relative from center [bp]" "Enrichment over Mean" "MNase fragment profile".
 
 __Question 3]__ Here actually we have two files(q3_first.tsv & q3_second.tsv) listed in another file list_q3.tsv  contain different data but one similar key. Rscript contain code which joining the data based on that common key and generate output file join_output.tsv. Command used for execution: Rscript join_list_of_files.R list_q3.tsv  join_output.tsv
+
+__Question 4]__ In this task we divided a numeric dataset into quantiles, labeling each data point according to its quantile group. Python script(group_in_quantiles.py) is executed on data file to achieve the output. Command used for execution:cat first_hundred_numbers.tsv | python group_in_quantiles.py 4
