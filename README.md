@@ -14,4 +14,4 @@ __Question 5]__ Here we have to generate heatmap of big file(not uploaded here b
 
 Commands used for execution: zcat big_data.tsv.gz | cut --complement -f1 > new_data.tsv
 
-python3 heatmap.py
+python heatmap.py
