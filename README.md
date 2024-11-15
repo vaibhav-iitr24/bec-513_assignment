@@ -9,3 +9,6 @@ __Question 2]__ We have data file q2_data.tsv and have to generate line plot bas
 __Question 3]__ Here actually we have two files(q3_first.tsv & q3_second.tsv) listed in another file list_q3.tsv  contain different data but one similar key. Rscript contain code which joining the data based on that common key and generate output file join_output.tsv. Command used for execution: Rscript join_list_of_files.R list_q3.tsv  join_output.tsv
 
 __Question 4]__ In this task we divided a numeric dataset into quantiles, labeling each data point according to its quantile group. Python script(group_in_quantiles.py) is executed on data file to achieve the output. Command used for execution:cat first_hundred_numbers.tsv | python group_in_quantiles.py 4
+
+__Question 5]__ Here we have to generate heatmap of big file(not uploaded here because of size issue). First we removed first column from big file and stored in a file(new_data.tsv). Using heatmap.py heatmap achieved. Commands used for execution: zcat big_data.tsv.gz | cut --complement -f1 > new_data.tsv
+python3 heatmap.py
